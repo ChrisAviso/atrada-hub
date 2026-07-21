@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Design / Estimate — Atrada Hub</title>
+<title>Production — Atrada Hub</title>
 <script>
 (function(){
   var img = new Image();
@@ -64,6 +64,8 @@ main > p.lead{color:var(--text-dim);font-size:14px;margin:0 0 32px;}
 .status-live{background:var(--green);}
 .status-soon{background:#9aa0ab;}
 .tool-icon{width:34px;height:34px;border-radius:8px;background:var(--atrada-blue-pale);color:var(--atrada-blue);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;}
+
+.notice{background:var(--atrada-blue-pale);border:1px solid #c8d9ff;border-radius:10px;padding:14px 18px;font-size:12.5px;color:#0a4fd6;margin-bottom:28px;line-height:1.55;}
 </style>
 </head>
 <body>
@@ -75,57 +77,24 @@ main > p.lead{color:var(--text-dim);font-size:14px;margin:0 0 32px;}
 
 <main>
   <p class="dept-eyebrow">Department</p>
-  <h1>Design / Estimate</h1>
-  <p class="lead">Tools used for assembly breakdown, scheduling, revisions, and change control.</p>
+  <h1>Production</h1>
+  <p class="lead">Fabrication, QA and dispatch tracking, per physical unit.</p>
+
+  <div class="notice">Production Board uses its own separate sign-in — your Design/Estimate login won't carry over automatically. Ask Chris to set up your account if you don't have one yet.</div>
 
   <div class="tool-grid">
-    <a class="tool-card live" href="https://atrada-so-schedule-board.pages.dev/" target="_blank" rel="noopener">
-      <div class="tool-icon">SO</div>
+    <a class="tool-card live" href="https://atrada-production-board.pages.dev/" target="_blank" rel="noopener">
+      <div class="tool-icon">PB</div>
       <span class="status-pill status-live">Live</span>
-      <h3>SO Schedule Board</h3>
-      <p>Sales order, OPPTS and PROJTS scheduling board.</p>
-    </a>
-
-    <a class="tool-card live" href="https://atrada-assembly-builder.pages.dev/" target="_blank" rel="noopener">
-      <div class="tool-icon">AB</div>
-      <span class="status-pill status-live">Live</span>
-      <h3>Assembly Builder</h3>
-      <p>Parses cutting lists and part drawings into structured BOMs, weldment and sheetmetal order summaries, and printable Master BOMs.</p>
+      <h3>Production Board</h3>
+      <p>Unit-level task tracking, clock in/out, daily hours, attendance and dispatch readiness.</p>
     </a>
 
     <div class="tool-card disabled">
-      <div class="tool-icon">RH</div>
+      <div class="tool-icon">QA</div>
       <span class="status-pill status-soon">Coming Soon</span>
-      <h3>Revision History Builder</h3>
-      <p>Tracks assembly revisions and change history over time.</p>
-    </div>
-
-    <div class="tool-card disabled">
-      <div class="tool-icon">ECO</div>
-      <span class="status-pill status-soon">Coming Soon</span>
-      <h3>ECO Builder</h3>
-      <p>Engineering change order creation and tracking.</p>
-    </div>
-
-    <div class="tool-card disabled">
-      <div class="tool-icon">DA</div>
-      <span class="status-pill status-soon">Coming Soon</span>
-      <h3>Drawings Auditor</h3>
-      <p>Checks the accuracy, correctness and completeness of every drawing — GA, sub-assembly and part drawings.</p>
-    </div>
-
-    <div class="tool-card disabled">
-      <div class="tool-icon">DBP</div>
-      <span class="status-pill status-soon">Coming Soon</span>
-      <h3>Design Best Practices</h3>
-      <p>Reference standards and guidelines for consistent, high-quality design work.</p>
-    </div>
-
-    <div class="tool-card disabled">
-      <div class="tool-icon">CS</div>
-      <span class="status-pill status-soon">Coming Soon</span>
-      <h3>Cost Sheet Builder</h3>
-      <p>Builds itemized cost sheets from assembly and material data.</p>
+      <h3>QA Checklist</h3>
+      <p>Inspection checklists and non-conformance tracking — not scoped yet.</p>
     </div>
   </div>
 </main>
